@@ -277,6 +277,7 @@ nav .mobile-nav {
   display: flex;
   inset: 0;
   transition: all 0.3 ease-in-out;
+  z-index: 3;
 }
 .empty-space {
   width: 45%;
@@ -383,4 +384,35 @@ nav .mobile-nav.active {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+/*=============== services Section ===============*/
+.service-section {
+  background-color: var(--background-primary);
+  padding-top: var(--py);
+}
+.services {
+  margin: var(--py);
+  font-size: var(--fs-1);
+  text-align: center;
+}
+.service-section-items {
+}
+.service-item {
+  background: var(--background-secondary);
+  box-shadow: var(--shadow-1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin: 20px;
+}
+.service-title {
+  margin: 10px;
+}
+.service-des {
+  text-justify: auto;
+  font-size: var(--fs-3);
+  color: var(--foreground-secondary);
 }
