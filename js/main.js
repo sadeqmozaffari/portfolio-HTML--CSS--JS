@@ -1,5 +1,12 @@
 /* copyright 2023 Sadeqmozaffari.com */
 
+/*=============== Auto Type ===============*/
+var typed = new Typed(".auto-type", {
+  strings: ["Software Developer", "Web Developer", "Frontend Developer"],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
+});
 /*=============== Theme ===============*/
 
 // navbar variables

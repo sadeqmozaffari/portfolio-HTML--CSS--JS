@@ -327,6 +327,7 @@ nav .mobile-nav.active {
 /*=============== HERO Section ===============*/
 .hero-section {
   background: var(--background-secondary);
+  height: 100vh;
 }
 .hero-items {
   display: flex;
@@ -385,17 +386,53 @@ nav .mobile-nav.active {
   width: 100%;
   object-fit: cover;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 40px;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+.social-github-name {
+  font-size: var(--fs-4);
+}
+
+.social .social-icon {
+  color: var(--foreground-secondary);
+}
+.light-theme .social .social-github:hover {
+  color: #000000;
+}
+
+.social .social-linkedin:hover {
+  color: #007bb5;
+}
+.social .social-twitter:hover {
+  color: #55acee;
+}
 /*=============== services Section ===============*/
 .service-section {
   background-color: var(--background-primary);
   padding-top: var(--py);
 }
 .services {
-  margin: var(--py);
+  margin-bottom: var(--py);
   font-size: var(--fs-1);
   text-align: center;
 }
 .service-section-items {
+  padding-bottom: var(--py);
 }
 .service-item {
   background: var(--background-secondary);
@@ -415,4 +452,54 @@ nav .mobile-nav.active {
   text-justify: auto;
   font-size: var(--fs-3);
   color: var(--foreground-secondary);
+}
+
+/*=============== SKILL Section ===============*/
+.skill-section {
+  padding-top: var(--py);
+  background: var(--background-secondary);
+  padding-bottom: var(--py);
+  overflow: hidden;
+}
+.skill {
+  text-align: center;
+}
+.skill-section-items {
+  width: calc(250px * 10);
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+.skill-card-img {
+  perspective: 100px;
+  width: 150px;
+  height: 150px;
+  padding: 15px 25px;
+  background: var(--background-secondary);
+  box-shadow: var(--shadow-1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.skill-card-img img {
+  width: 100%;
+  transition: transform 1s;
+}
+.skill-card-img img:hover {
+  transform: translateZ(10px);
 }
