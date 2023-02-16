@@ -454,7 +454,45 @@ nav .mobile-nav.active {
   font-size: var(--fs-3);
   color: var(--foreground-secondary);
 }
-
+/*=============== Porfolio Section ===============*/
+.section-portfolio {
+  padding: var(--py) 0;
+  background: var(--background-secondary);
+}
+.portfolio-grid {
+  padding-top: var(--py);
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.protfolio-item {
+  background-color: var(--background-primary);
+  box-shadow: var(--shadow-1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.protfolio-item img {
+  width: 100%;
+}
+.portfolio-info {
+  padding-top: 0px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.portfolio-info p {
+  text-align: justify;
+  font-size: var(--fs-3);
+  color: var(--foreground-secondary);
+}
+.btn-portfolio {
+  margin-top: 15px;
+  float: right;
+}
 /*=============== SKILL Section ===============*/
 .skill-section {
   padding-top: var(--py);
@@ -601,7 +639,7 @@ nav .mobile-nav.active {
 }
 .form-group input,
 textarea {
-  padding: 10px 15px;
+  padding: 15px 20px;
 }
 .form-group textarea {
   height: 100px;
@@ -658,6 +696,8 @@ textarea::placeholder {
   color: var(--foreground-primary);
   font-weight: 500;
 }
+
+/*=============== footer Section ===============*/
 .footer {
   padding: 20px;
   background-color: var(--action-secondary);
