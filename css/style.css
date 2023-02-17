@@ -134,7 +134,7 @@ nav .mobile-nav.active {
 .hero-des {
   font-size: var(--fs-3);
   font-weight: 500;
-  color: var(--foreground-primary);
+  color: var(--foreground-secondary);
   text-align: justify;
   text-justify: inter-word;
   padding: 10px 40px;
