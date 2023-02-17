@@ -65,7 +65,7 @@
     display: none;
   }
   .hero-section {
-    padding-top: 50px;
+    padding-top: 20px;
   }
   .service-section-items {
     display: grid;
@@ -131,9 +131,10 @@
     position: relative;
     width: 500px;
     height: 500px;
+    align-self: baseline;
   }
-  .hero-info {
-    margin-top: 200px;
+  .hero-section {
+    padding-top: 100px;
   }
   .service-section-items {
     grid-template-columns: repeat(3, 1fr);
