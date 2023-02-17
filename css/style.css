@@ -218,13 +218,18 @@ nav .mobile-nav.active {
   padding-top: var(--py);
 }
 .services {
-  margin-bottom: var(--py);
   font-size: var(--fs-1);
   text-align: center;
 }
 .service-section-items {
-  padding-bottom: var(--py);
-  display: grid;
+  padding: var(--py) 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accent {
+  color: var(--accent);
 }
 .service-item {
   background: var(--background-secondary);
@@ -236,12 +241,25 @@ nav .mobile-nav.active {
   align-items: center;
   padding: 40px;
   margin: 20px;
+  max-width: 600px;
 }
 .service-title {
   margin: 10px;
 }
 .service-des {
   text-justify: auto;
+  font-size: var(--fs-3);
+  color: var(--foreground-secondary);
+}
+.service-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.service-list-item {
+  list-style-type: circle;
   font-size: var(--fs-3);
   color: var(--foreground-secondary);
 }
@@ -265,10 +283,19 @@ nav .mobile-nav.active {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
-.protfolio-item img {
+.protfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-img img {
+  object-fit: cover;
   width: 100%;
+  height: 250px;
 }
+
 .portfolio-info {
   padding-top: 0px;
   padding-bottom: 25px;
@@ -283,6 +310,9 @@ nav .mobile-nav.active {
 .btn-portfolio {
   margin-top: 15px;
   float: right;
+}
+.info-portfolio-item {
+  padding: 5px 35px;
 }
 /*=============== SKILL Section ===============*/
 .skill-section {

@@ -50,7 +50,7 @@
   .des-menu-item a {
     font-size: var(--fs-3);
     color: var(--foreground-primary);
-    font-weight: 700;
+    font-weight: 500;
     transition: all 0.2s ease-out;
   }
   .des-menu-item a:hover {
@@ -68,7 +68,8 @@
     padding-top: 50px;
   }
   .service-section-items {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
