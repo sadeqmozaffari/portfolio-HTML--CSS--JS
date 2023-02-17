@@ -35,13 +35,14 @@ header {
   height: 40px;
   width: 40px;
   border-radius: 20px;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: var(--action-secondary);
   color: var(--foreground-secondary);
-  font-size: var(--fs-1);
+  font-size: 25px;
   transition: all 0.5s ease-in;
+  text-align: center;
 }
 .nav-btn:hover {
   background: var(--accent);
@@ -220,6 +221,7 @@ nav .mobile-nav.active {
 }
 .service-section-items {
   padding-bottom: var(--py);
+  display: grid;
 }
 .service-item {
   background: var(--background-secondary);
@@ -475,7 +477,7 @@ textarea::placeholder {
   border-radius: 25px;
   background-color: var(--accent);
   color: var(--white);
-  font-size: var(--fs-1);
+  font-size: 30px;
 }
 .info-text {
   font-size: var(--fs-3);

@@ -23,11 +23,22 @@
     <div class="container">
       <nav class="header">
         <a href="#" class="logo">Sadeq<span class="family ">Dev</span></a>
-        <div class="btn-group">
-          <button class="nav-btn theme-btn dark" id="change-theme">
-            <ion-icon class="sun" name="sunny-outline"></ion-icon>
-            <ion-icon class="moon" name="moon-outline"></ion-icon>
-          </button>
+
+
+        <ul class="des-menu">
+          <li class="des-menu-item"><a href="#About">About Me</a></li>
+          <li class="des-menu-item"><a href="#Services">Services</a></li>
+          <li class="des-menu-item"><a href="#Portfolio">Portfolio</a></li>
+          <li class="des-menu-item"><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <div class="btn-group ">
+         
+            <button class="nav-btn theme-btn dark " id="change-theme">
+              <ion-icon class="sun" name="sunny-outline"></ion-icon>
+              <ion-icon class="moon" name="moon-outline"></ion-icon>
+            </button>
+      
           <!-- <button class="nav-btn nav-menu-btn">Resume</button> -->
           <button class="nav-btn nav-menu-btn">
             <ion-icon name="menu-outline"></ion-icon>
@@ -84,13 +95,22 @@
             </h1>
             <h2 class="h1"> <span class="auto-type"></span></h2>
             <p class="hero-des">Specialized in Front End Development</p>
+
+
+            <div class="btn-group mt-20  mb-40">
+              <button class="btn-hero-section">Resume</button>
+              <a class="btn-hero-section" href="#Contact">Contact Me</a>
+            </div>
+
+            <div class="social mt-20 des-icons">
+              <a class="social-github social-icon" href="#"><ion-icon name="logo-github"></ion-icon></a>
+              <a class="social-twitter social-icon" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a class="social-linkedin social-icon" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
           </div>
 
 
-          <div class="btn-group mt-20  mb-40">
-            <button class="btn-hero-section">Resume</button>
-            <button class="btn-hero-section">About Me</button>
-          </div>
+
 
         </div>
 
@@ -98,7 +118,7 @@
       </div>
 
       </div>
-      <div class="social mt-20">
+      <div class="social mt-20 mobile-icons">
         <a class="social-github social-icon" href="#"><ion-icon name="logo-github"></ion-icon></a>
         <a class="social-twitter social-icon" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
         <a class="social-linkedin social-icon" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
@@ -119,31 +139,27 @@
               velit sed sit ipsam. Sit!
             </p>
           </div>
-          <div class="service-section-items">
-            <div class="service-item">
-              <img class="service-img" src="./img/service2.png" />
-              <h2 class="h2 service-title">title of Services</h2>
-              <p class="service-des">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-                aliquid sunt qui dolore distinctio numquam, veritatis iste
-                aperiam, sequi amet sint voluptatum ratione accusantium, repellat
-                velit sed sit ipsam. Sit!
-              </p>
-            </div>
-
-            <div class="service-section-items">
-              <div class="service-item">
-                <img class="service-img" src="./img/service3.png" />
-                <h2 class="h2 service-title">title of Services</h2>
-                <p class="service-des">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-                  aliquid sunt qui dolore distinctio numquam, veritatis iste
-                  aperiam, sequi amet sint voluptatum ratione accusantium, repellat
-                  velit sed sit ipsam. Sit!
-                </p>
-              </div>
-            </div>
+          <div class="service-item">
+            <img class="service-img" src="./img/service2.png" />
+            <h2 class="h2 service-title">title of Services</h2>
+            <p class="service-des">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+              aliquid sunt qui dolore distinctio numquam, veritatis iste
+              aperiam, sequi amet sint voluptatum ratione accusantium, repellat
+              velit sed sit ipsam. Sit!
+            </p>
           </div>
+          <div class="service-item">
+            <img class="service-img" src="./img/service3.png" />
+            <h2 class="h2 service-title">title of Services</h2>
+            <p class="service-des">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+              aliquid sunt qui dolore distinctio numquam, veritatis iste
+              aperiam, sequi amet sint voluptatum ratione accusantium, repellat
+              velit sed sit ipsam. Sit!
+            </p>
+          </div>
+        </div>
     </section>
     <!--=============== Portfolio Section ===============-->
     <section class="section-portfolio" id="Portfolio">
@@ -152,7 +168,7 @@
         <div class="portfolio-grid">
 
           <div class="protfolio-item">
-            <img src="./img/web6.png" loading="lazy"/>
+            <img src="./img/web6.png" loading="lazy" />
             <div class="portfolio-info">
               <h3 class="h2">Design</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ad saepe voluptate cupiditate?
@@ -176,7 +192,7 @@
 
 
           <div class="protfolio-item">
-            <img src="./img/web6.png" loading="lazy"/>
+            <img src="./img/web6.png" loading="lazy" />
             <div class="portfolio-info">
               <h3 class="h2">Design</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ad saepe voluptate cupiditate?
@@ -189,7 +205,7 @@
 
 
           <div class="protfolio-item">
-            <img src="./img/web6.png" loading="lazy"/>
+            <img src="./img/web6.png" loading="lazy" />
             <div class="portfolio-info">
               <h3 class="h2">Design</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ad saepe voluptate cupiditate?
@@ -199,9 +215,27 @@
             </div>
           </div>
 
+          <div class="protfolio-item">
+            <img src="./img/web6.png" loading="lazy" />
+            <div class="portfolio-info">
+              <h3 class="h2">Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ad saepe voluptate cupiditate?
+                Eveniet amet repudiandae, quos ab molestiae unde, fuga error debitis, velit doloribus distinctio
+                reiciendis nihil tenetur?</p>
+              <a href="#" class="btn btn-primary btn-portfolio">Preview</a>
+            </div>
+          </div>
 
-
-
+          <div class="protfolio-item">
+            <img src="./img/web6.png" loading="lazy" />
+            <div class="portfolio-info">
+              <h3 class="h2">Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ad saepe voluptate cupiditate?
+                Eveniet amet repudiandae, quos ab molestiae unde, fuga error debitis, velit doloribus distinctio
+                reiciendis nihil tenetur?</p>
+              <a href="#" class="btn btn-primary btn-portfolio">Preview</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,3 +1,134 @@
 /* copyright 2023 Sadeqmozaffari.com */
 
-/*=============== RESPONSIVE CSS ===============*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .des-menu {
+    display: none;
+  }
+  .des-icons {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  :root {
+    /*=============== typography ===============*/
+    --fs-base: 0.9rem;
+  }
+  .nav-menu-btn {
+    display: block;
+  }
+  .des-menu {
+    display: none;
+  }
+  .des-icons {
+    display: none;
+  }
+  .mobile-icons {
+    display: flex;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
+  .nav-menu-btn {
+    display: none;
+  }
+  .des-menu {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .des-menu-item {
+  }
+  .des-menu-item a {
+    font-size: var(--fs-3);
+    color: var(--foreground-primary);
+    font-weight: 700;
+    transition: all 0.2s ease-out;
+  }
+  .des-menu-item a:hover {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .hero-items {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+
+  .des-icons {
+    display: flex;
+  }
+  .mobile-icons {
+    display: none;
+  }
+  .hero-section {
+    padding-top: 50px;
+  }
+  .service-section-items {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  :root {
+    /*=============== typography  ===============*/
+    --fs-base: 1rem;
+    --fs-1: 2rem;
+  }
+  .service-section-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-se {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: var(--py);
+    justify-content: center;
+  }
+  .contact-se .info {
+    justify-self: center;
+  }
+
+  .theme-btn.light {
+    background: linear-gradient(45deg, hsl(7, 100%, 71%), hsl(46, 100%, 65%));
+  }
+
+  .theme-btn.dark {
+    background: linear-gradient(45deg, hsl(225, 100%, 60%), hsl(296, 80%, 40%));
+  }
+
+  .nav-btn {
+    color: var(--white);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  :root {
+    /*=============== typography  ===============*/
+    --fs-base: 1rem;
+    --fs-1: 3rem;
+  }
+  .container {
+    max-width: 1400px;
+  }
+  .service-section-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
