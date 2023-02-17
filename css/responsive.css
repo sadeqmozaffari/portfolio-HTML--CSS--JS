@@ -58,12 +58,6 @@
     font-weight: 700;
   }
 
-  .hero-items {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 40px;
-  }
-
   .des-icons {
     display: flex;
   }
@@ -123,6 +117,22 @@
   }
   .container {
     max-width: 1400px;
+  }
+  .hero-items {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+  .hero-img-div {
+    flex-shrink: 0;
+  }
+  .hero-img-div {
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }
+  .hero-info {
+    margin-top: 200px;
   }
   .service-section-items {
     grid-template-columns: repeat(3, 1fr);
